@@ -2,7 +2,7 @@ import * as fs from "fs";
 import {Article, getArticle} from "@/components/article";
 
 export async function generateStaticParams() {
-    const files = fs.readdirSync(process.cwd() + "/src/app/md/articles")
+    const files = fs.readdirSync(process.cwd() + "/src/md/articles")
     return await Promise.all(files.map(async file => {
         return {
             slug: file.split(".")[0],
