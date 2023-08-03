@@ -21,8 +21,8 @@ export default async function Home() {
     posts = posts.sort((a, b) => a.id < b.id ? -1 : 1);
 
     return (
-        <nav className="text-xl sm:text-4xl">
-            <ul className="space-y-4 sm:space-y-8">
+        <nav className="text-2xl sm:text-4xl">
+            <ul className="space-y-8 sm:space-y-10">
                 {(posts).map(post => (
                     <li key={post.slug} className="hover:underline"><Link
                         href={`/posts/${post.slug}`}>{post.title}</Link></li>

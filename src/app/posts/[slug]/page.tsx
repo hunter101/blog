@@ -15,7 +15,7 @@ export default async function Post({params}: { params: { slug: string } }) {
     return (
         <div className="flex flex-col">
             <Article content={post.contentHtml}/>
-            <div className="text-center text-xs font-sans mt-20 pt-5 border-t border-white/30">
+            <div className="text-center text-xs font-sans mt-20 pt-5 border-t">
                 <div className="font-semibold">Published</div>
                 <div className="opacity-60">{post.date}</div>
             </div>

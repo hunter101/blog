@@ -21,7 +21,7 @@ export async function getArticle(slug: string) {
 
 export function Article({content}: { content: string }) {
     return (
-        <article className="prose lg:prose-lg dark:prose-invert prose-h1:text-4xl">
+        <article className="prose lg:prose-lg dark:prose-invert prose-h1:text-4xl prose-p:opacity-80">
             <div dangerouslySetInnerHTML={{__html: content}}/>
         </article>
     )

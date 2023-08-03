@@ -14,18 +14,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={"relative m-0"}>
-        <header className="p-10 lg:sticky top-0 lg:mb-10">
+      <body className="relative border-t-8">
+        <header className="px-5 py-10 sm:p-10 lg:fixed top-0 lg:mb-10">
           <nav>
-            <div className="text-2xl font-bold mb-4"><Link href="/" rel="logo">Andy Hunter</Link></div>
-            <ul className="inline-flex sm:flex sm:flex-col space-x-2 sm:space-x-0">
-              <li><Link href="/">index</Link></li>
+            <Link className="block text-2xl font-bold mb-4 hover:no-underline" href="/" rel="logo">Andy Hunter</Link>
+            <ul className="text-lg inline-flex sm:flex sm:flex-col space-x-2 sm:space-y-2 sm:space-x-0 opacity-60">
+              <li><Link href="/">home</Link></li>
               <li><Link href="/about">about</Link></li>
               <li><Link href="mailto: andyhunter52@gmail.com">contact</Link></li>
             </ul>
           </nav>
         </header>
-        <main className="flex px-10 sm:p-10 lg:justify-center">
+        <main className="flex p-5 sm:p-10 lg:pt-72 lg:justify-center">
           {children}
         </main>
       </body>
