@@ -18,7 +18,7 @@ async function getData() {
 
 export default async function Home() {
     let posts = await getData()
-    posts = posts.sort((a, b) => a.id < b.id ? -1 : 1);
+    posts = posts.sort((a, b) => a.id < b.id ? -1 : 1).filter(post => post.id > 0);
 
     return (
         <nav className="text-2xl sm:text-4xl">
