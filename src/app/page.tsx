@@ -24,7 +24,7 @@ export default async function Home() {
         <nav className="text-2xl sm:text-4xl">
             <ul className="space-y-8 sm:space-y-10">
                 {(posts).map(post => (
-                    <li key={post.slug} className="hover:underline"><Link
+                    <li key={post.slug} className="font-bold hover:underline"><Link
                         href={`/posts/${post.slug}`}>{post.title}</Link></li>
                 ))}
             </ul>
